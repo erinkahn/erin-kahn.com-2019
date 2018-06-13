@@ -1,0 +1,93 @@
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Libre Baskerville', serif;
+// font-family: 'Crimson Text', serif;
+
+
+@import 'reset';
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	
+}
+
+.header{
+
+	.headerLine{
+
+		.logo{
+			margin: 40px 0 0 40px;
+			background-image: url('../img/heroBkg.png');
+			background-repeat: no-repeat;
+			background-size: 120px;
+			background-position: top left;
+			height: 0;
+			padding-bottom: 20%;
+		}
+	
+		.burger{
+			position: absolute;
+			right: 0px;
+			top: 39px;
+	
+			div:first-child{
+				position: absolute;
+				background-color: #825aa6;
+				height: 7px;
+				width: 67px;
+				right: 45px;
+				border-radius: 20px;
+			}
+	
+			div:last-child{
+				top: 22px;
+				position: absolute;
+				background-color: #93a1d2;
+				height: 7px;
+				width: 45px;
+				right: 45px;
+				border-radius: 20px;
+			}
+		}
+	}
+	
+	
+	.heroText{
+		text-align: center;
+		color: #504099;
+
+		h1{
+			font-weight: 300;
+			font-size: 4em;
+			// text-transform: uppercase;
+			letter-spacing: 0.08em;
+			font-family: 'Sniglet', sans-serif;
+
+		}
+
+		h2{
+			font-family: 'Crimson Text', serif;
+			font-size: 1.4em;
+			margin-top: 30px;
+			letter-spacing: 0.08em;
+		}
+	}
+
+}
+
+
+.work{
+	margin-top: 21%;
+	background-image: url('../img/bkgText.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 0;
+	padding-bottom: 100%;
+}
+
+// font-family: 'Fredericka the Great', cursive;
+// font-family: 'Sniglet', cursive;
