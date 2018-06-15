@@ -71,7 +71,7 @@ body {
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
-
+	margin-bottom: 20%;
 
 	.topLine{
 		width: 479%;
@@ -244,7 +244,7 @@ body {
 				white-space: nowrap;
 			}
 	
-			h2{
+			h3{
 				font-family: 'Crimson Text', serif;
 				font-size: 1.6em;
 				margin-top: 21px;
@@ -270,19 +270,24 @@ body {
 				
 			}
 	
-			h3{
+			h4{
 				text-transform: uppercase;
 				letter-spacing: 0.09em;
 				font-family: 'Cabin Sketch', cursive;
 			}
 	
 			.down{
+				cursor: pointer;
 				width: 0; 
 				height: 0; 
 				border-left: 20px solid transparent;
 				border-right: 20px solid transparent;
 				border-top: 20px solid #825aa6;
 				margin: 20px auto;
+
+				&:hover{
+					border-top: 20px solid #d8ddef;
+				}
 			}
 		}
 
@@ -466,11 +471,47 @@ body {
 }
 
 
-.work{
-	margin-top: 21%;
+// ALL h2s 
+h2{
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: #541b8e;
+	font-family: 'Sniglet', cursive;
+	font-size: 2em;
+	@media screen and (min-width: 768px){
+		font-size: 2.4em;
+	}
+}
+
+
+
+
+#portfolio{
 	background-image: url('../img/bkgText.png');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-position: 0 15px;
+	background-size: cover;
 	height: 0;
-	padding-bottom: 100%;
+	padding-bottom: 200%;
+	@media screen and (min-width: 768px){
+		background-size: contain;
+		padding-bottom: 80%;
+	}
+
 }
+
+
+
+
+
+#about, #skills, #resume{
+	margin-top: 80%;
+	@media screen and (min-width: 768px){
+		margin-top: 20%;
+	}
+}
+
+
+
+
