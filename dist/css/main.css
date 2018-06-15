@@ -94,7 +94,13 @@ table {
 
 @media screen and (min-width: 1440px) {
 	.hero-section .topLine {
-		width: 93.19444444%;
+		width: 83.194444%;
+	}
+}
+
+@media screen and (min-width: 1480px) {
+	.hero-section .topLine {
+		width: 79.194444%;
 	}
 }
 
@@ -190,7 +196,7 @@ table {
 .hero-section .topLine .burger {
 	position: absolute;
 	right: 176px;
-	top: 68px;
+	top: 60px;
 }
 
 .hero-section .topLine .burger div:first-child {
@@ -198,7 +204,7 @@ table {
 	background-color: #825aa6;
 	height: 7px;
 	width: 67px;
-	left: 24px;
+	left: 49px;
 	border-radius: 20px;
 }
 
@@ -208,7 +214,7 @@ table {
 	background-color: #93a1d2;
 	height: 7px;
 	width: 45px;
-	left: 46px;
+	left: 71px;
 	border-radius: 20px;
 }
 
@@ -366,8 +372,8 @@ table {
 
 @media screen and (min-width: 1440px) {
 	.hero-section .bottomLine div:first-child {
-		padding-bottom: 42%;
-		width: 52.652778%;
+		padding-bottom: 51%;
+		width: 50.652778%;
 		margin-left: 0px;
 	}
 }
@@ -506,6 +512,13 @@ table {
 	.hero-section .bottomLine div:last-child {
 		margin-left: 31.333333%;
 		margin-top: 0px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.hero-section .bottomLine div:last-child {
+		margin-top: -30px;
+		margin-left: 36%;
 	}
 }
 
