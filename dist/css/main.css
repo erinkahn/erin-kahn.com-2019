@@ -849,6 +849,19 @@ h2 {
 	margin: 50% auto;
 }
 
+@media screen and (max-width: 767px) {
+	#about {
+		width: 80%;
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#about {
+		width: 63.722222%;
+	}
+}
+
 #about .selfie {
 	background-image: url("../img/selfie.png");
 	background-repeat: no-repeat;
@@ -857,6 +870,20 @@ h2 {
 	padding-bottom: 33%;
 	width: 24.79695431%;
 	position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+	#about .selfie {
+		width: 90%;
+		padding-bottom: 90%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#about .selfie {
+		width: 80%;
+		padding-bottom: 45%;
+	}
 }
 
 #about .selfie-bkg {
@@ -869,6 +896,20 @@ h2 {
 	width: 24.70050761%;
 }
 
+@media screen and (max-width: 767px) {
+	#about .selfie-bkg {
+		width: 70%;
+		padding-bottom: 90%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#about .selfie-bkg {
+		width: 34%;
+		padding-bottom: 44%;
+	}
+}
+
 #about .aboutText {
 	margin-left: 55%;
 	flex-direction: column;
@@ -876,9 +917,29 @@ h2 {
 	position: relative;
 }
 
+@media screen and (max-width: 767px) {
+	#about .aboutText {
+		width: 100%;
+		margin: 120% auto;
+		margin-left: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#about .aboutText {
+		margin-left: 68%;
+	}
+}
+
 #about .aboutText h2 {
 	margin-bottom: 33px;
 	text-align: left;
+}
+
+@media screen and (max-width: 1023px) {
+	#about .aboutText h2 {
+		margin-bottom: 12px;
+	}
 }
 
 #about .aboutText p {
@@ -888,6 +949,12 @@ h2 {
 	letter-spacing: 0.08em;
 	font-weight: 100;
 	color: #541b8e;
+}
+
+@media screen and (max-width: 1023px) {
+	#about .aboutText p {
+		font-size: 0.9em;
+	}
 }
 
 #about .aboutText div:nth-child(7) {

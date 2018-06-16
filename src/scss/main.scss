@@ -708,10 +708,26 @@ h2{
 #about{
 	display: flex;
 	flex-direction: row;
+
+	@media screen and (max-width: 767px){
+		width: 80%;
+		flex-direction: column;
+	}
+	@media screen and (min-width: 768px){
+		width: 63.722222%;
+	}
 	width: 54.72222222%; // 788 / 1440
 	margin: 50% auto;
 
 	.selfie{
+		@media screen and (max-width: 767px){
+			width: 90%;
+			padding-bottom: 90%;
+		}
+		@media screen and (min-width: 768px){
+			width: 80%;
+			padding-bottom: 45%;
+		}
 		background-image: url('../img/selfie.png');
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -722,6 +738,14 @@ h2{
 	}
 
 	.selfie-bkg{
+		@media screen and (max-width: 767px){
+			width: 70%;
+			padding-bottom: 90%;
+		}
+		@media screen and (min-width: 768px){
+			width: 34%;
+			padding-bottom: 44%;
+		}
 		background-color: #d2c3df;
 		height: 0;
 		padding-bottom: 33%;
@@ -732,17 +756,31 @@ h2{
 	}
 
 	.aboutText{
+		@media screen and (max-width: 767px){
+			width: 100%;
+			margin: 120% auto;
+			margin-left: 0;
+		}
+		@media screen and (min-width: 768px){
+			margin-left: 68%;
+		}
 		margin-left: 55%;
 		flex-direction: column;
 		justify-content: center;
 		position: relative;
 
 		h2{
+			@media screen and (max-width: 1023px){
+				margin-bottom: 12px;
+			}
 			margin-bottom: 33px;
 			text-align: left;
 		}
 
 		p{
+			@media screen and (max-width: 1023px){
+				font-size: 0.9em;
+			}
 			line-height: 1.8em;
 			margin-bottom: 20px;
 			font-family: 'avenir-next', sans-serif;
