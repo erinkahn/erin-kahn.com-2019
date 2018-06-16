@@ -487,21 +487,6 @@ h2{
 	}
 }
 
-
-
-
-
-
-#about, #skills, #resume{
-	margin-top: 80%;
-	@media screen and (min-width: 768px){
-		margin-top: 40%;
-	}
-}
-
-
-
-
 //portfolio section-----------------------------------------
 
 
@@ -511,10 +496,9 @@ h2{
 	background-position: 0 127px;
 	background-size: cover;
 	height: 0;
-	padding-bottom: 200%;
 	@media screen and (min-width: 768px){
 		background-size: contain;
-		padding-bottom: 80%;
+		padding-bottom: 82%;
 	}
 
 	.workContainer{
@@ -707,26 +691,54 @@ h2{
 
 #about{
 	display: flex;
-	flex-direction: row;
+	margin: 0 auto;
+	clear: both;
 
-	@media screen and (max-width: 767px){
-		width: 80%;
+	@media screen and (max-width: 687px){
+		width: 71%;
 		flex-direction: column;
+		margin-top: 43%;
+		padding-top: 36%;
+	}
+	@media screen and (min-width: 688px){
+		width: 72%;
+		flex-direction: row;
+		margin-top: 50%;
+		padding-top: 36%;
 	}
 	@media screen and (min-width: 768px){
 		width: 63.722222%;
+		margin-top: 40%;
+		padding-top:17%;
 	}
-	width: 54.72222222%; // 788 / 1440
-	margin: 50% auto;
+	@media screen and (min-width: 1024px){
+		width: 60.722222%;
+		padding-top: 4%;
+	}
+	@media screen and (min-width: 1224px){
+		width: 54.722222%; // 788 / 1440
+	}
+	 
 
 	.selfie{
-		@media screen and (max-width: 767px){
-			width: 90%;
-			padding-bottom: 90%;
+		@media screen and (max-width: 687px){
+			width: 62%;
+			padding-bottom: 82%;
+		}
+		@media screen and (min-width: 688px){
+			width: 38%;
+			padding-bottom: 50%;
 		}
 		@media screen and (min-width: 768px){
 			width: 80%;
 			padding-bottom: 45%;
+		}
+		@media screen and (min-width: 1024px){
+			padding-bottom: 36%;
+		}
+		@media screen and (min-width: 1224px){
+			width: 77%;
+			padding-bottom: 32%;
 		}
 		background-image: url('../img/selfie.png');
 		background-repeat: no-repeat;
@@ -738,33 +750,53 @@ h2{
 	}
 
 	.selfie-bkg{
-		@media screen and (max-width: 767px){
-			width: 70%;
-			padding-bottom: 90%;
+		@media screen and (max-width: 687px){
+			width: 62%;
+			padding-bottom: 79%;
+			margin: -30px 0 0 41px;
+		}
+		@media screen and (min-width: 688px){
+			width: 37%;
+			padding-bottom: 50%;
+			margin: -23px 0 0 30px;
 		}
 		@media screen and (min-width: 768px){
 			width: 34%;
 			padding-bottom: 44%;
 		}
+		@media screen and (min-width: 1024px){
+			width: 27%;
+			padding-bottom: 35.4%;
+		}
+		@media screen and (min-width: 1224px){
+			width: 24%;
+			padding-bottom: 31.4%;
+		}
 		background-color: #d2c3df;
 		height: 0;
-		padding-bottom: 33%;
 		position: absolute;
 		z-index: -1;
-		margin: -23px 0 0 30px;
-		width: 24.70050761%; // 368 / 788
+		 // 368 / 788
 	}
 
 	.aboutText{
-		@media screen and (max-width: 767px){
+		@media screen and (max-width: 687px){
 			width: 100%;
-			margin: 120% auto;
+			margin: 0 auto;
 			margin-left: 0;
+			margin-top: 126%;
+		}
+		@media screen and (min-width: 688px){
+			width: 44%;
+			margin-left: 63%;
 		}
 		@media screen and (min-width: 768px){
-			margin-left: 68%;
+			margin-left: 67%;
 		}
-		margin-left: 55%;
+		@media screen and (min-width: 1024px){
+			margin-left: 59%;
+		}
+		// margin-left: 55%;
 		flex-direction: column;
 		justify-content: center;
 		position: relative;
@@ -778,8 +810,16 @@ h2{
 		}
 
 		p{
-			@media screen and (max-width: 1023px){
-				font-size: 0.9em;
+			font-size: 0.9em;
+			@media screen and (min-width: 1024px){
+				line-height: 2em;
+			}
+			@media screen and (min-width: 1224px){
+				font-size: 1em;
+				line-height: 2.1em;
+			}
+			@media screen and (min-width: 1440px){
+				line-height: 2.4em;
 			}
 			line-height: 1.8em;
 			margin-bottom: 20px;
@@ -829,3 +869,15 @@ h2{
 		}
 	}
 }
+
+
+
+// skills section--------------------------------------------
+
+#skills{
+	margin-top: 40%;
+}
+
+
+
+
