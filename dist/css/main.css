@@ -842,4 +842,65 @@ h2 {
 	float: left;
 }
 
+#about {
+	display: flex;
+	flex-direction: row;
+	width: 54.72222222%;
+	margin: 50% auto;
+}
+
+#about .selfie {
+	background-image: url("../img/selfie.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 0;
+	padding-bottom: 33%;
+	width: 24.79695431%;
+	position: absolute;
+}
+
+#about .selfie-bkg {
+	background-color: #d2c3df;
+	height: 0;
+	padding-bottom: 33%;
+	position: absolute;
+	z-index: -1;
+	margin: -23px 0 0 30px;
+	width: 24.70050761%;
+}
+
+#about .aboutText {
+	margin-left: 55%;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+#about .aboutText h2 {
+	margin-bottom: 33px;
+	text-align: left;
+}
+
+#about .aboutText p {
+	line-height: 1.8em;
+	margin-bottom: 20px;
+	font-family: 'avenir-next', sans-serif;
+	letter-spacing: 0.08em;
+	font-weight: 100;
+	color: #541b8e;
+}
+
+#about .aboutText div:nth-child(7) {
+	background-color: #d2c3df;
+	height: 2px;
+	position: absolute;
+	top: 9%;
+}
+
+#about .aboutText div:last-child {
+	background-color: #d2c3df;
+	height: 2px;
+	margin-top: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
