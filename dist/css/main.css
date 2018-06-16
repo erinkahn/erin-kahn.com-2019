@@ -641,10 +641,20 @@ h2 {
 	}
 }
 
+#about, #skills, #resume {
+	margin-top: 80%;
+}
+
+@media screen and (min-width: 768px) {
+	#about, #skills, #resume {
+		margin-top: 40%;
+	}
+}
+
 #portfolio {
 	background-image: url("../img/bkgText.png");
 	background-repeat: no-repeat;
-	background-position: 0 15px;
+	background-position: 0 127px;
 	background-size: cover;
 	height: 0;
 	padding-bottom: 200%;
@@ -657,14 +667,179 @@ h2 {
 	}
 }
 
-#about, #skills, #resume {
-	margin-top: 80%;
+#portfolio .workContainer {
+	margin: 30px auto;
+}
+
+@media screen and (max-width: 767px) {
+	#portfolio .workContainer {
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 768px) {
-	#about, #skills, #resume {
-		margin-top: 20%;
+	#portfolio .workContainer {
+		width: 54%;
 	}
+}
+
+@media screen and (min-width: 1224px) {
+	#portfolio .workContainer {
+		width: 49.30555556%;
+	}
+}
+
+#portfolio .workContainer div {
+	-webkit-filter: grayscale(100%);
+	/* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	transition: .4s ease-in-out;
+	cursor: pointer;
+}
+
+#portfolio .workContainer div:hover {
+	-webkit-filter: grayscale(0%);
+	/* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+	background-color: rgba(80, 64, 153, 0.3);
+}
+
+.split-smart {
+	width: 100%;
+}
+
+.split-smart div:first-child {
+	background-image: url("../img/split.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 34%;
+	width: 68.30985915%;
+	float: left;
+}
+
+.split-smart div:last-child {
+	background-image: url("../img/smartCar.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 34%;
+	width: 31.69014085%;
+	float: left;
+}
+
+.apps-oreo-nerds-waze {
+	width: 100%;
+}
+
+.apps-oreo-nerds-waze div:first-child {
+	background-image: url("../img/apps.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 65%;
+	width: 33.94366197%;
+	float: left;
+}
+
+.apps-oreo-nerds-waze div:nth-child(2) {
+	background-image: url("../img/oreo.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 33%;
+	width: 34.50704225%;
+	float: left;
+}
+
+.apps-oreo-nerds-waze div:nth-child(3) {
+	background-image: url("../img/nerds.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 33%;
+	width: 31.5%;
+	float: left;
+}
+
+.apps-oreo-nerds-waze div:last-child {
+	background-image: url("../img/waze.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 32%;
+	width: 66%;
+	float: left;
+}
+
+.gkc-kkart-brewery-drive {
+	width: 68.30985915%;
+	float: left;
+}
+
+.gkc-kkart-brewery-drive div:first-child {
+	background-image: url("../img/gkc.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 48%;
+	width: 50%;
+	float: left;
+}
+
+.gkc-kkart-brewery-drive div:nth-child(2) {
+	background-image: url("../img/kkart.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 48%;
+	width: 50%;
+	float: left;
+}
+
+.gkc-kkart-brewery-drive div:nth-child(3) {
+	background-image: url("../img/brewery.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 69%;
+	width: 50%;
+	float: left;
+}
+
+.gkc-kkart-brewery-drive div:last-child {
+	background-image: url("../img/drive.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 69%;
+	width: 50%;
+	float: left;
+}
+
+.moodie-clover {
+	width: 31.69014085%;
+	float: left;
+}
+
+.moodie-clover div:first-child {
+	background-image: url("../img/moodie.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 152%;
+	width: 100%;
+	float: left;
+}
+
+.moodie-clover div:last-child {
+	background-image: url("../img/ch.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 100%;
+	width: 100%;
+	float: left;
 }
 
 /*# sourceMappingURL=main.css.map */
