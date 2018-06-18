@@ -1083,7 +1083,30 @@ h2 {
 	flex-wrap: wrap;
 	margin: 0 auto;
 	margin-top: 24%;
-	width: 61.11111111%;
+}
+
+@media screen and (max-width: 767px) {
+	#skills {
+		width: 85%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#skills {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#skills {
+		width: 61.11111111%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	#skills {
+		width: 50.11111111%;
+	}
 }
 
 #skills h2 {
@@ -1091,11 +1114,8 @@ h2 {
 }
 
 #skills h5 {
-	color: #8763aa;
 	text-align: center;
-	font-size: 1.4em;
 	font-family: 'Avenir-Next', sans-serif;
-	transform: translateY(27px);
 }
 
 .designSkills, .codeSkills, .frameworks {
@@ -1105,26 +1125,212 @@ h2 {
 	margin-bottom: 40px;
 }
 
-.designSkills div {
-	border: 2px solid #8763aa;
+.designSkills div, .codeSkills div, .frameworks div {
 	border-radius: 90%;
 	width: 80px;
 	height: 80px;
 }
 
+@media screen and (max-width: 767px) {
+	.designSkills div, .codeSkills div, .frameworks div {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.designSkills div h5, .codeSkills div h5, .frameworks div h5 {
+	color: #fff;
+	font-size: 1.2em;
+	transform: translateY(30px);
+}
+
+@media screen and (max-width: 767px) {
+	.designSkills div h5, .codeSkills div h5, .frameworks div h5 {
+		transform: translateY(16px);
+	}
+}
+
+.designSkills div {
+	background-color: #8763aa;
+}
+
 .designSkills div img {
-	width: 33%;
-	transform: translate(26px, 26px);
+	width: 28%;
+	transform: translate(29px, 30px);
 }
 
-.codeSklls {
-	background-color: red;
+@media screen and (max-width: 767px) {
+	.designSkills div img {
+		transform: translate(15px, 18px);
+		width: 39%;
+	}
 }
 
-.codeSklls .fab {
-	color: #504099;
-	background-color: orange;
-	font-size: 2em;
+.codeSkills div {
+	background-color: #d2c3df;
+}
+
+.codeSkills div em {
+	color: #fff;
+	font-size: 1.8em;
+	transform: translate(28px, 26px);
+	text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+	.codeSkills div em {
+		transform: translate(14px, 12px);
+	}
+}
+
+.codeSkills div em.fa-sass {
+	transform: translate(24px, 26px);
+}
+
+@media screen and (max-width: 767px) {
+	.codeSkills div em.fa-sass {
+		transform: translate(8px, 11px);
+	}
+}
+
+.codeSkills div em.fa-php {
+	transform: translate(22px, 26px);
+}
+
+@media screen and (max-width: 767px) {
+	.codeSkills div em.fa-php {
+		transform: translate(8px, 13px);
+	}
+}
+
+.frameworks div {
+	background-color: #d8ddef;
+}
+
+.frameworks div em {
+	color: #fff;
+	font-size: 1.8em;
+	transform: translate(28px, 26px);
+	text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+	.frameworks div em {
+		transform: translate(12px, 12px);
+	}
+}
+
+.frameworks div em.fa-wordpress-simple {
+	transform: translate(24px, 26px);
+}
+
+@media screen and (max-width: 767px) {
+	.frameworks div em.fa-wordpress-simple {
+		transform: translate(10px, 11px);
+	}
+}
+
+.frameworks div h5 {
+	color: #fff;
+	font-size: 1em;
+	transform: translateY(32px);
+}
+
+@media screen and (max-width: 767px) {
+	.frameworks div h5 {
+		transform: translateY(18px);
+	}
+}
+
+.bottomTriangleLines {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bottomTriangleLines img:first-child {
+	width: 25.90909091%;
+}
+
+@media screen and (min-width: 768px) {
+	.bottomTriangleLines img:first-child {
+		width: 20%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.bottomTriangleLines img:first-child {
+		width: 30%;
+		margin-top: 10%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.bottomTriangleLines img:first-child {
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.bottomTriangleLines img:first-child {
+		width: 38%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.bottomTriangleLines img:nth-child(2) {
+		margin-top: -80px;
+		width: 55.13636364%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.bottomTriangleLines img:nth-child(2) {
+		width: 66.13636364%;
+		margin-top: -180px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.bottomTriangleLines img:nth-child(2) {
+		width: 73.13636364%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.bottomTriangleLines img:nth-child(2) {
+		width: 75.13636364%;
+		margin-top: -200px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.bottomTriangleLines img:nth-child(2) {
+		width: 72.13636364%;
+		margin-top: -204px;
+	}
+}
+
+#resume {
+	margin-top: 24%;
+}
+
+@media screen and (min-width: 768px) {
+	#resume {
+		margin-top: 40%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#resume {
+		margin-top: 30%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	#resume {
+		margin-top: 24%;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -861,18 +861,26 @@ h2{
 	flex-wrap: wrap;
 	margin: 0 auto;
 	margin-top: 24%;
-	width: 61.11111111%;
+	@media screen and (max-width: 767px){
+		width: 85%;
+	}
+	@media screen and (min-width: 768px){
+		width: 80%;
+	}
+	@media screen and (min-width: 1024px){
+		width: 61.11111111%;
+	}
+	@media screen and (min-width: 1224px){
+		width: 50.11111111%;
+	}
 
 	h2{
 		margin-bottom: 38px;
 	}
 
 	h5{
-		color: #8763aa;
 		text-align: center;
-		font-size: 1.4em;
 		font-family: 'Avenir-Next', sans-serif;
-		transform: translateY(27px);
 	}
 }
 
@@ -881,31 +889,168 @@ h2{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
+
+	div{
+		@media screen and (max-width: 767px){
+			width: 50px;
+			height: 50px;
+		}
+		border-radius: 90%;
+		width: 80px;
+		height: 80px;
+
+		h5{
+			@media screen and (max-width: 767px){
+				transform: translateY(16px);
+			}
+			color: #fff;
+			font-size: 1.2em;
+			transform: translateY(30px);
+		}
+	}
 }
 
 .designSkills{
 
 	div{
-		border: 2px solid #8763aa;
-		border-radius: 90%;
-		width: 80px;
-		height: 80px;
+		background-color: #8763aa;
+		
 
 		img{
-			width: 33%;
-			transform: translate(26px, 26px);
+			@media screen and (max-width: 767px){
+				transform: translate(15px, 18px);
+				width: 39%;
+			}
+			width: 28%;
+			transform: translate(29px, 30px);
 		}
 	}
 }
 
-.codeSklls{
-	background-color: red;
+.codeSkills{
 
-	.fab{
-		color: #504099;
-		background-color: orange;
-		font-size: 2em;
+	div{
+		background-color: #d2c3df;
+
+
+		em{
+			@media screen and (max-width: 767px){
+				transform: translate(14px, 12px);
+			}
+			color: #fff;
+			font-size: 1.8em;
+			transform: translate(28px, 26px);
+			text-align: center;
+
+			&.fa-sass{
+				@media screen and (max-width: 767px){
+					transform: translate(8px, 11px);
+				}
+				transform: translate(24px, 26px);
+			}
+			&.fa-php{
+				@media screen and (max-width: 767px){
+					transform: translate(8px, 13px);
+				}
+				transform: translate(22px, 26px);
+			}
+		}
 	}
-
 }
 
+.frameworks{
+
+	div{
+		background-color: #d8ddef;
+
+		em{
+			@media screen and (max-width: 767px){
+				transform: translate(12px, 12px);
+			}
+			color: #fff;
+			font-size: 1.8em;
+			transform: translate(28px, 26px);
+			text-align: center;
+
+			&.fa-wordpress-simple{
+				@media screen and (max-width: 767px){
+					transform: translate(10px, 11px);
+				}
+				transform: translate(24px, 26px);
+			}
+		}
+
+		h5{
+			@media screen and (max-width: 767px){
+				transform: translateY(18px);
+			}
+			color: #fff;
+			font-size: 1em;
+			transform: translateY(32px);
+		}
+	}
+}
+
+
+.bottomTriangleLines{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	img:first-child{
+		width: 25.90909091%;
+		@media screen and (min-width: 768px){
+			width: 20%;
+		}
+		@media screen and (min-width: 768px){
+			width: 30%;
+			margin-top: 10%;
+		}
+		@media screen and (min-width: 1024px){
+			width: 40%;
+		}
+		@media screen and (min-width: 1440px){
+			width: 38%;
+		}
+	}
+	img:nth-child(2){
+		@media screen and (max-width: 767px){
+			margin-top: -80px;
+			width: 55.13636364%;
+		}
+		@media screen and (min-width: 768px){
+			width: 66.13636364%;
+			margin-top: -180px;
+		}
+		@media screen and (min-width: 1024px){
+			width: 73.13636364%;
+		}
+		@media screen and (min-width: 1224px){
+			width: 75.13636364%;
+			margin-top: -200px;
+		}
+		@media screen and (min-width: 1440px){
+			width: 72.13636364%;
+			margin-top: -204px;
+		}
+		
+	}
+}
+
+
+
+// resume section--------------------------------------------
+
+
+#resume{
+	margin-top: 24%;
+	@media screen and (min-width: 768px){
+		margin-top: 40%;
+	}
+	@media screen and (min-width: 1024px){
+		margin-top: 30%;
+	}
+	@media screen and (min-width: 1224px){
+		margin-top: 24%;
+	}
+}
