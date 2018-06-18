@@ -117,6 +117,12 @@ table {
 	margin-bottom: 20%;
 }
 
+@media screen and (min-width: 1440px) {
+	.hero-section {
+		height: 102vh;
+	}
+}
+
 .hero-section .topLine {
 	width: 479%;
 	display: flex;
@@ -858,21 +864,28 @@ h2 {
 @media screen and (min-width: 768px) {
 	#about {
 		width: 63.722222%;
-		margin-top: 40%;
+		margin-top: 34%;
 		padding-top: 17%;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	#about {
+		width: 61%;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	#about {
-		width: 60.722222%;
-		padding-top: 4%;
+		width: 52.722222%;
+		margin-top: 20%;
 	}
 }
 
 @media screen and (min-width: 1224px) {
 	#about {
-		width: 54.722222%;
+		width: 46.722222%;
+		margin-top: 16%;
 	}
 }
 
@@ -907,15 +920,22 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 900px) {
+	#about .selfie {
+		width: 31%;
+		padding-bottom: 41%;
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	#about .selfie {
-		padding-bottom: 36%;
+		padding-bottom: 33%;
 	}
 }
 
 @media screen and (min-width: 1224px) {
 	#about .selfie {
-		width: 77%;
+		width: 73%;
 		padding-bottom: 32%;
 	}
 }
@@ -950,10 +970,17 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 900px) {
+	#about .selfie-bkg {
+		width: 31%;
+		padding-bottom: 40%;
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	#about .selfie-bkg {
-		width: 27%;
-		padding-bottom: 35.4%;
+		width: 25%;
+		padding-bottom: 32.4%;
 	}
 }
 
@@ -992,21 +1019,33 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 900px) {
+	#about .aboutText {
+		margin-left: 63%;
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	#about .aboutText {
-		margin-left: 59%;
+		margin-left: 61%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	#about .aboutText {
+		margin-left: 66%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	#about .aboutText {
+		margin-left: 64%;
 	}
 }
 
 #about .aboutText h2 {
-	margin-bottom: 33px;
+	margin-bottom: 12px;
 	text-align: left;
-}
-
-@media screen and (max-width: 1023px) {
-	#about .aboutText h2 {
-		margin-bottom: 12px;
-	}
 }
 
 #about .aboutText p {
@@ -1038,21 +1077,48 @@ h2 {
 	}
 }
 
-#about .aboutText div:nth-child(7) {
-	background-color: #d2c3df;
-	height: 2px;
-	position: absolute;
-	top: 9%;
-}
-
-#about .aboutText div:last-child {
-	background-color: #d2c3df;
-	height: 2px;
-	margin-top: 0;
-}
-
 #skills {
-	margin-top: 40%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	margin-top: 24%;
+	width: 61.11111111%;
+}
+
+#skills h2 {
+	margin-bottom: 38px;
+}
+
+#skills h5 {
+	color: #8763aa;
+	text-align: center;
+	font-size: 1.4em;
+	font-family: 'Avenir-Next', sans-serif;
+	transform: translateY(27px);
+}
+
+.designSkills, .codeSkills, .frameworks {
+	flex-direction: row;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.designSkills div {
+	border: 2px solid #8763aa;
+	border-radius: 90%;
+	width: 80px;
+	height: 80px;
+}
+
+.designSkills div img {
+	width: 33%;
+	transform: translate(26px, 26px);
+}
+
+.codeSklls {
+	background-color: red;
 }
 
 /*# sourceMappingURL=main.css.map */
