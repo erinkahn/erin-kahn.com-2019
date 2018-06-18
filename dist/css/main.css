@@ -1355,7 +1355,7 @@ h2 {
 }
 
 #resume .middle {
-	width: 20.83333333%;
+	width: 21.83333333%;
 	flex-direction: column;
 	display: flex;
 	justify-content: center;
@@ -1374,7 +1374,7 @@ h2 {
 
 #resume .middle div {
 	background-color: #8560a8;
-	padding: 16px 50px;
+	padding: 16px 58px;
 	border-radius: 20px;
 	transition: .4s ease-in-out;
 }
@@ -1413,6 +1413,138 @@ h2 {
 	left: 0;
 	background-size: cover;
 	width: 22.91666667%;
+}
+
+footer {
+	bottom: 0;
+	margin: 0 auto;
+	margin-top: 40%;
+	display: flex;
+	justify-content: center;
+	background-image: url("../img/footer.png");
+	background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+	footer {
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	footer {
+		margin-top: 24%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	footer {
+		margin-top: 14%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	footer {
+		margin-top: 8%;
+	}
+}
+
+footer h5, footer em {
+	color: #685697;
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+
+footer img {
+	padding: 0 17px;
+}
+
+footer h5 {
+	letter-spacing: 0.09em;
+	font-family: 'Cabin Sketch', cursive;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+	footer h5 {
+		font-size: 1.5em;
+	}
+}
+
+footer em {
+	font-size: 1.8em;
+}
+
+footer div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+	footer div {
+		width: 80%;
+		margin: 0 auto;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	footer div {
+		width: 30%;
+	}
+}
+
+footer div:first-child {
+	max-width: 31%;
+	padding: 107px 0 30px 0;
+}
+
+@media screen and (min-width: 1024px) {
+	footer div:first-child {
+		padding: 148px 0 74px 0;
+		max-width: 23%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	footer div:first-child {
+		max-width: 19%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	footer div:first-child {
+		max-width: 16%;
+	}
+}
+
+footer div:first-child em {
+	display: flex;
+	padding-right: 12px;
+	align-items: center;
+	transition: .2s ease-in-out;
+}
+
+footer div:first-child em:hover {
+	color: #fff;
+}
+
+footer div:last-child {
+	max-width: 23.61111111%;
+	padding: 50px 0 70px 0;
+}
+
+@media screen and (min-width: 768px) {
+	footer div:last-child {
+		padding: 82px 0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	footer div:last-child {
+		padding: 105px 0;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */

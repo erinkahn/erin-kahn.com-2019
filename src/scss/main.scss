@@ -1074,7 +1074,7 @@ h2{
 	}
 
 	.middle{
-		width: 20.83333333%;
+		width: 21.83333333%;
 		flex-direction: column;
 		display: flex;
 		justify-content: center;
@@ -1092,7 +1092,7 @@ h2{
 				padding: 14px 20px;
 			}
 			background-color: #8560a8;
-			padding: 16px 50px;
+			padding: 16px 58px;
 			border-radius: 20px;
 			transition: .4s ease-in-out;
 			&:hover{
@@ -1125,3 +1125,110 @@ h2{
 	}
 }
 
+
+
+// footer section--------------------------------------------
+
+
+footer{
+	bottom: 0;
+	margin: 0 auto;
+	margin-top: 40%;
+	display: flex;
+	justify-content: center;
+	@media screen and (max-width: 767px){
+		flex-direction: column;
+	}
+	@media screen and (min-width: 768px){
+		margin-top: 24%;
+	}
+	@media screen and (min-width: 1024px){
+		margin-top: 14%;
+	}
+	@media screen and (min-width: 1224px){
+		margin-top: 8%;
+	}
+	background-image: url('../img/footer.png');
+	background-size: cover;
+
+
+	h5, em{
+		color: #685697;
+		white-space: nowrap;
+		text-transform: uppercase;
+	}
+
+	img{
+		padding: 0 17px;
+	}
+
+	h5{
+		@media screen and (max-width: 767px){
+			font-size: 1.5em;
+		}
+		letter-spacing: 0.09em;
+		font-family: 'Cabin Sketch', cursive; 
+		font-weight: bold;
+	}
+
+	em{
+		
+		font-size: 1.8em;
+
+	}
+
+	div{
+		@media screen and (max-width: 767px){
+			width: 80%;
+			margin: 0 auto;
+			justify-content: center;
+		}
+		@media screen and (min-width: 768px){
+			width: 30%;
+		}
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		//stalk me
+		&:first-child{
+			max-width: 31%;
+			padding: 107px 0 30px 0;
+			@media screen and (min-width: 1024px){
+				padding: 148px 0 74px 0;
+				max-width: 23%;
+			}
+			@media screen and (min-width: 1224px){
+				max-width: 19%;
+			}
+			@media screen and (min-width: 1440px){
+				max-width: 16%;
+			}
+
+			em{
+				display: flex;
+				padding-right: 12px;
+				align-items: center;
+				transition: .2s ease-in-out;
+				&:hover{
+					color: #fff;
+				}
+			}
+
+		}
+
+		// email me
+		&:last-child{
+			max-width: 23.61111111%;
+			padding: 50px 0 70px 0;
+			@media screen and (min-width: 768px){
+				padding: 82px 0;
+			}
+			@media screen and (min-width: 1024px){
+				padding: 105px 0;
+			}
+
+		}
+	}
+	
+}
