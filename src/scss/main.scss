@@ -1009,8 +1009,11 @@ h2{
 		@media screen and (min-width: 1024px){
 			width: 40%;
 		}
-		@media screen and (min-width: 1440px){
+		@media screen and (min-width: 1224px){
 			width: 38%;
+		}
+		@media screen and (min-width: 1440px){
+			width: 34%;
 		}
 	}
 	img:nth-child(2){
@@ -1026,11 +1029,11 @@ h2{
 			width: 73.13636364%;
 		}
 		@media screen and (min-width: 1224px){
-			width: 75.13636364%;
+			width: 70.13636364%;
 			margin-top: -200px;
 		}
 		@media screen and (min-width: 1440px){
-			width: 72.13636364%;
+			width: 62.13636364%;
 			margin-top: -204px;
 		}
 		
@@ -1043,14 +1046,82 @@ h2{
 
 
 #resume{
+	width: 100%;
 	margin-top: 24%;
 	@media screen and (min-width: 768px){
-		margin-top: 40%;
-	}
-	@media screen and (min-width: 1024px){
 		margin-top: 30%;
 	}
+	@media screen and (min-width: 1024px){
+		margin-top: 16%;
+	}
 	@media screen and (min-width: 1224px){
-		margin-top: 24%;
+		margin-top: 10%;
+	}
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+
+	.leftTriangle{
+		background-image: url('../img/resumeLftTri.png');
+		background-repeat: no-repeat;
+		height: 0;
+		padding-bottom: 50%;
+		left: 0;
+		background-size: cover;
+		width: 22.91666667%;
+	}
+
+	.middle{
+		width: 20.83333333%;
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		h2{
+			@media screen and (max-width: 767px){
+				margin-bottom: 20px;
+			}
+			margin-bottom: 40px;
+		}
+
+		div{
+			@media screen and (max-width: 767px){
+				padding: 14px 20px;
+			}
+			background-color: #8560a8;
+			padding: 16px 50px;
+			border-radius: 20px;
+			transition: .4s ease-in-out;
+			&:hover{
+				background-color: #d8ddef;
+			}
+
+			a{
+				@media screen and (max-width: 767px){
+					font-size: 0.8em;
+				}
+				white-space: nowrap;
+				letter-spacing: 0.09em;
+				font-family: 'Avenir-Next', sans-serif;
+				text-decoration: none;
+				color: #fff;
+				font-weight: 100;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.rightTriangle{
+		background-image: url(../img/resumeRtTri.png);
+		background-repeat: no-repeat;
+		height: 0;
+		padding-bottom: 50%;
+		left: 0;
+		background-size: cover;
+		width: 22.91666667%;
 	}
 }
+
