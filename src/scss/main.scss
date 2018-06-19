@@ -1136,9 +1136,6 @@ footer{
 	margin-top: 40%;
 	display: flex;
 	justify-content: center;
-	@media screen and (max-width: 767px){
-		flex-direction: column;
-	}
 	@media screen and (min-width: 768px){
 		margin-top: 24%;
 	}
@@ -1150,6 +1147,21 @@ footer{
 	}
 	background-image: url('../img/footer.png');
 	background-size: cover;
+
+	// mobile
+	span{
+		@media screen and (max-width: 767px){
+			display: flex;
+			justify-content: space-between;
+			margin: 10% auto;
+			max-width: 50%;
+
+			em{
+				margin-top: 20px;
+			}
+		}
+		display: none;
+	}
 
 
 	h5, em{
@@ -1166,26 +1178,43 @@ footer{
 		@media screen and (max-width: 767px){
 			font-size: 1.5em;
 		}
+		@media screen and (min-width: 1440px){
+			font-size: 1.3em;
+		}
 		letter-spacing: 0.09em;
 		font-family: 'Cabin Sketch', cursive; 
 		font-weight: bold;
 	}
 
 	em{
-		
+		cursor: pointer;
+		transition: .2s ease-in-out;
 		font-size: 1.8em;
+		padding-left: 19px;
+		&:hover{
+			color: #fff;
+		}
 
 	}
 
 	div{
 		@media screen and (max-width: 767px){
-			width: 80%;
-			margin: 0 auto;
-			justify-content: center;
+			display: none;
 		}
 		@media screen and (min-width: 768px){
-			width: 30%;
+			width: 33%;
+			margin-top: 51px;
 		}
+		@media screen and (min-width: 1024px){
+			width: 24.8%;
+		}
+		@media screen and (min-width: 1224px){
+			width: 20.7%;
+		}
+		@media screen and (min-width: 1224px){
+			width: 17.4%;
+		}
+			
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -1207,12 +1236,8 @@ footer{
 
 			em{
 				display: flex;
-				padding-right: 12px;
+				padding-right: 19px;
 				align-items: center;
-				transition: .2s ease-in-out;
-				&:hover{
-					color: #fff;
-				}
 			}
 
 		}
@@ -1220,10 +1245,9 @@ footer{
 		// email me
 		&:last-child{
 			max-width: 23.61111111%;
-			padding: 50px 0 70px 0;
-			@media screen and (min-width: 768px){
-				padding: 82px 0;
-			}
+			padding: 82px 0;
+			margin-top: -36px;
+
 			@media screen and (min-width: 1024px){
 				padding: 105px 0;
 			}

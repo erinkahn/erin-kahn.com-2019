@@ -1425,12 +1425,6 @@ footer {
 	background-size: cover;
 }
 
-@media screen and (max-width: 767px) {
-	footer {
-		flex-direction: column;
-	}
-}
-
 @media screen and (min-width: 768px) {
 	footer {
 		margin-top: 24%;
@@ -1446,6 +1440,22 @@ footer {
 @media screen and (min-width: 1224px) {
 	footer {
 		margin-top: 8%;
+	}
+}
+
+footer span {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	footer span {
+		display: flex;
+		justify-content: space-between;
+		margin: 10% auto;
+		max-width: 50%;
+	}
+	footer span em {
+		margin-top: 20px;
 	}
 }
 
@@ -1471,8 +1481,21 @@ footer h5 {
 	}
 }
 
+@media screen and (min-width: 1440px) {
+	footer h5 {
+		font-size: 1.3em;
+	}
+}
+
 footer em {
+	cursor: pointer;
+	transition: .2s ease-in-out;
 	font-size: 1.8em;
+	padding-left: 19px;
+}
+
+footer em:hover {
+	color: #fff;
 }
 
 footer div {
@@ -1483,15 +1506,32 @@ footer div {
 
 @media screen and (max-width: 767px) {
 	footer div {
-		width: 80%;
-		margin: 0 auto;
-		justify-content: center;
+		display: none;
 	}
 }
 
 @media screen and (min-width: 768px) {
 	footer div {
-		width: 30%;
+		width: 33%;
+		margin-top: 51px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	footer div {
+		width: 24.8%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	footer div {
+		width: 20.7%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	footer div {
+		width: 17.4%;
 	}
 }
 
@@ -1521,24 +1561,14 @@ footer div:first-child {
 
 footer div:first-child em {
 	display: flex;
-	padding-right: 12px;
+	padding-right: 19px;
 	align-items: center;
-	transition: .2s ease-in-out;
-}
-
-footer div:first-child em:hover {
-	color: #fff;
 }
 
 footer div:last-child {
 	max-width: 23.61111111%;
-	padding: 50px 0 70px 0;
-}
-
-@media screen and (min-width: 768px) {
-	footer div:last-child {
-		padding: 82px 0;
-	}
+	padding: 82px 0;
+	margin-top: -36px;
 }
 
 @media screen and (min-width: 1024px) {
