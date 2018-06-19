@@ -837,6 +837,27 @@ h2 {
 	float: left;
 }
 
+.portfolio-popUp {
+	display: none;
+	background-color: red;
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
+	z-index: 12;
+}
+
+.portfolio-popUp div {
+	height: 300px;
+	color: blue;
+	width: 100%;
+}
+
+.portfolio-popUp.show {
+	display: block;
+	position: absolute;
+	z-index: 12;
+}
+
 #about {
 	display: flex;
 	margin: 0 auto;
