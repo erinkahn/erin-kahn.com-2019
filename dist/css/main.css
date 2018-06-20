@@ -839,23 +839,57 @@ h2 {
 
 .portfolio-popUp {
 	display: none;
-	background-color: red;
-	position: relative;
+	background-color: #fff;
+	border: 2px solid gray;
 	width: 60%;
 	margin: 0 auto;
 	z-index: 12;
 }
 
 .portfolio-popUp div {
-	height: 300px;
+	height: 500px;
 	color: blue;
 	width: 100%;
+}
+
+.portfolio-popUp div a {
+	top: 30px;
+	right: 30px;
+	position: absolute;
+	color: gray;
 }
 
 .portfolio-popUp.show {
 	display: block;
 	position: absolute;
-	z-index: 12;
+	width: 100%;
+	left: 0%;
+}
+
+.content h5 {
+	color: #000;
+	padding-bottom: 20px;
+	font-weight: 600;
+	font-size: 1.1em;
+}
+
+.content h6 {
+	color: #000;
+	padding-bottom: 20px;
+	font-weight: 600;
+	font-size: 0.9em;
+}
+
+.content p {
+	color: #000;
+}
+
+.content.contentShow {
+	display: block;
+	position: absolute;
+	margin: 15% auto;
+	width: 73%;
+	font-family: 'Avenir-Next', sans-serif;
 }
 
 #about {

@@ -12,10 +12,6 @@
 	box-sizing: border-box;
 }
 
-body {
-	// background: #fff;
-}
-
 
 .nav{
 	display: none;
@@ -688,24 +684,66 @@ h2{
 
 .portfolio-popUp{
 	display: none;
-	background-color: red;
-	position: relative;
+	background-color: #fff;
+	border: 2px solid gray;
 	width: 60%;
 	margin: 0 auto;
 	z-index: 12;
 
 	div{
-		height: 300px;
+		height: 500px;
 		color: blue;
 		width: 100%;
+
+		a{
+			top: 30px;
+			right: 30px;
+			position: absolute;
+			color: gray;
+		}
+
 	}
 
+	//show popup box
 	&.show{
 		display: block;
 		position: absolute;
-		z-index: 12;
-		
+		width: 100%;
+		left: 0%;	
 	}
+}
+
+//hide content until pop up shows
+.content{
+	// display: none;
+
+	h5{
+		color: #000;
+		padding-bottom: 20px;
+		font-weight: 600;
+		font-size: 1.1em;
+	}
+
+	h6{
+		color: #000;
+		padding-bottom: 20px;
+		font-weight: 600;
+		font-size: 0.9em;
+	}
+
+	p{
+		color: #000;
+	}
+
+
+	&.contentShow{
+		display: block;
+		position: absolute;
+		margin: 15% auto;
+		width: 73%;
+		font-family: 'Avenir-Next', sans-serif;
+	}
+	
 }
 
 
