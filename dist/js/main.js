@@ -30,7 +30,6 @@ for (let i = 0; i < popUp.length; i++) {
 
             content[j].style.display = 'none'; // hide all other content
         }
-
         content[i].style.display = 'block'; // only show clicked - i 
     });
 };

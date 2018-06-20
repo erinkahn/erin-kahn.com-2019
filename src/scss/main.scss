@@ -680,7 +680,12 @@ h2{
 	}
 }
 
+
+
+
 // portfolio pop up section--------------------------------------------
+
+
 
 .portfolio-popUp{
 	display: none;
@@ -691,23 +696,33 @@ h2{
 	z-index: 12;
 	overflow: hidden;
 
+	//white pop up box
 	div{
-		height: 530px;
-		color: blue;
+		height: 100vh;
 		width: 100%;
-
-
+		@media screen and (min-width: 768px){
+			height: 70vh;
+		}
+		@media screen and (min-width: 1024px){
+			height: 60vh;
+		}
+		@media screen and (min-width: 1224px){
+			height: 68vh;
+		}
 
 		.x{
 			top: 30px;
+			font-size:1.2em;
 			right: 30px;
 			position: absolute;
 			color: gray;
 			transition: .2s ease-in-out;
 			&:hover{
+				top: 28px;
+				right: 28px;
 				color: #fff;
 				background-color: gray;
-				padding: 3px 6px;
+				padding: 1px 5px;
 				border-radius: 90%;
 			}
 		}
@@ -720,7 +735,7 @@ h2{
 		position: absolute;
 		width: 100%;
 		left: 0%;
-		margin-top: 34%;
+		margin-top: 7%;
 		transition: .4s ease-in-out;
 		
 		@media screen and (min-width: 768px){
@@ -729,19 +744,20 @@ h2{
 			width: 67%;
 			left: 0%;
 			right: 0%;
-			margin-top: 144px;
+			margin-top: 4%;
 		}
-		@media screen and (min-width: 1224px){
-			width: 50%;
+		@media screen and (min-width: 1024px){
+			margin-top: 16%;
 		}
+
 	}
 }
 
-//hide content until pop up shows -- not working
+// pop up project detail content
 .content{
 
 	div{
-		margin: 8% auto;
+		margin: 10% auto;
 		width: 73%;
 		font-family: 'Avenir-Next', sans-serif;
 
@@ -764,7 +780,7 @@ h2{
 			padding-bottom: 30px;
 			font-size: 0.9em;
 			letter-spacing: 0.08em;
-			line-height: 1.2em;
+			line-height: 1.4em;
 			font-weight: 100;
 		}
 
