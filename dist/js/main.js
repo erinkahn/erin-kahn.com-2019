@@ -43,4 +43,31 @@ x.addEventListener('click', function () {
     console.log('x was clicked');
     document.querySelector('.portfolio-popUp').classList.remove('show');
 });
+
+//  hero arrow down scroll----------------------------------------------------------
+
+
+document.querySelector('.down').addEventListener('click', function () {
+    console.log('down arrow clicked');
+    event.preventDefault();
+
+    let portfolio = document.querySelector('#portfolio');
+    portfolio.scrollIntoView({ block: 'start', behavior: 'smooth' });
+});
+
+// menu scroll to slowly---------------------------------------------------------
+
+navButtons = document.querySelectorAll('.nav ul li a');
+
+for (let m = 0; m < navButtons.length; m++) {
+    navButtons[m].addEventListener('click', function () {
+        event.preventDefault();
+
+        let mainSections = document.querySelectorAll('.main');
+        for (let l = 0; l < mainSections.length; l++) {
+            console.log('mainSections[l]');
+        }
+        mainSections[m].scrollIntoView({ block: 'start', behavior: 'smooth' });
+    });
+}
 //# sourceMappingURL=main.js.map
