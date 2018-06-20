@@ -689,17 +689,27 @@ h2{
 	width: 60%;
 	margin: 0 auto;
 	z-index: 12;
+	overflow: hidden;
 
 	div{
-		height: 500px;
+		height: 530px;
 		color: blue;
 		width: 100%;
 
-		a{
+
+
+		.x{
 			top: 30px;
 			right: 30px;
 			position: absolute;
 			color: gray;
+			transition: .2s ease-in-out;
+			&:hover{
+				color: #fff;
+				background-color: gray;
+				padding: 3px 6px;
+				border-radius: 90%;
+			}
 		}
 
 	}
@@ -709,40 +719,72 @@ h2{
 		display: block;
 		position: absolute;
 		width: 100%;
-		left: 0%;	
+		left: 0%;
+		margin-top: 34%;
+		transition: .4s ease-in-out;
+		
+		@media screen and (min-width: 768px){
+			display: block;
+			position: absolute;
+			width: 67%;
+			left: 0%;
+			right: 0%;
+			margin-top: 144px;
+		}
+		@media screen and (min-width: 1224px){
+			width: 50%;
+		}
 	}
 }
 
-//hide content until pop up shows
+//hide content until pop up shows -- not working
 .content{
-	// display: none;
 
-	h5{
-		color: #000;
-		padding-bottom: 20px;
-		font-weight: 600;
-		font-size: 1.1em;
-	}
-
-	h6{
-		color: #000;
-		padding-bottom: 20px;
-		font-weight: 600;
-		font-size: 0.9em;
-	}
-
-	p{
-		color: #000;
-	}
-
-
-	&.contentShow{
-		display: block;
-		position: absolute;
-		margin: 15% auto;
+	div{
+		margin: 8% auto;
 		width: 73%;
 		font-family: 'Avenir-Next', sans-serif;
+
+		h5{
+			color: #8560a8;
+			padding-bottom: 24px;
+			font-weight: 600;
+			font-size: 1.3em;
+		}
+	
+		h6{
+			color: #000;
+			padding-bottom: 20px;
+			font-weight: 600;
+			font-size: 1em;
+		}
+	
+		p{
+			color: #000;
+			padding-bottom: 30px;
+			font-size: 0.9em;
+			letter-spacing: 0.08em;
+			line-height: 1.2em;
+			font-weight: 100;
+		}
+
+
+			
+		a{
+			text-decoration: none;
+			color: #8560a8;
+			text-align: center;
+			margin-top: -10px;
+			border: 1px solid #8560a8;
+			padding: 5px;
+			&:hover{
+				background-color: #8560a8;
+				color: #fff;
+			}
+		}
+		
 	}
+
 	
 }
 
