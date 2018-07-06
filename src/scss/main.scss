@@ -96,7 +96,7 @@
 		}
 		
 
-		div:first-child{
+		.left-triangle{
 			background-image: url('../img/purpleTriLeft.png');
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -127,7 +127,7 @@
 
 		}
 
-		div:nth-child(2){
+		.right-logo{
 			background-image: url('../img/topLogo.png');
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -165,7 +165,7 @@
 			top: 60px;
 			cursor: pointer;
 	
-			div:first-child{
+			.top-line{
 				position: absolute;
 				background-color: #825aa6;
 				height: 7px;
@@ -175,7 +175,7 @@
 				transition: .4s ease-in-out;
 			}
 	
-			div:last-child{
+			.bottom-line{
 				top: 22px;
 				position: absolute;
 				background-color: #93a1d2;
@@ -222,7 +222,13 @@
 				width: 80%;
 			}
 			@media screen and (min-width: 768px){
-				width: 61.97916667%;
+				max-width: 52.979167%;
+			}
+			@media screen and (min-width: 1024px){
+				width: 44.979167%;
+			}
+			@media screen and (min-width: 1224px){
+				width: 31.979167%;
 			}
 			@media screen and (min-width: 1440px){
 				margin-left: 17.097222%;
@@ -253,17 +259,16 @@
 				margin: 36px auto;
 				background-color: #504099;
 				height: 2px;
-				width: 40%;
+				max-width: 40%;
 				position: relative;
 	
 				div{ // dot
 					background-color: #825aa6;
-					height: O;
-					width: 5%;
-					padding-bottom: 5%;
+					height: 8px;
+					width: 8px;
 					position: absolute;
 					border-radius: 90%;
-					margin: -4px 48% 0 48%;
+					margin: -3px 48% 0 48%;
 				}
 				
 			}
@@ -694,21 +699,31 @@ h2{
 	width: 60%;
 	margin: 0 auto;
 	z-index: 12;
-	overflow: hidden;
+	overflow-y:scroll;
 
 	//white pop up box
 	div{
-		height: 100vh;
+		
+		height: 60vh;
 		width: 100%;
-		@media screen and (min-width: 768px){
-			height: 70vh;
-		}
-		@media screen and (min-width: 1024px){
-			height: 60vh;
-		}
-		@media screen and (min-width: 1224px){
-			height: 68vh;
-		}
+		// @media screen and (min-width: 460px){
+		// 	height: 65vh;
+		// }
+		// @media screen and (min-width: 570px){
+		// 	height: 68vh;
+		// }
+		// @media screen and (min-width: 700px){
+		// 	height: 86vh;
+		// }
+		// @media screen and (min-width: 768px){
+		// 	height: 66vh;
+		// }
+		// @media screen and (min-width: 1024px){
+		// 	height: 60vh;
+		// }
+		// @media screen and (min-width: 1224px){
+		// 	height: 68vh;
+		// }
 
 		.x{
 			top: 30px;
@@ -735,9 +750,17 @@ h2{
 		position: absolute;
 		width: 100%;
 		left: 0%;
-		margin-top: 7%;
+		margin-top: 9%;
 		transition: .4s ease-in-out;
-		
+		// @media screen and (min-width: 410px){
+		// 	margin-top: 22%;
+		// }
+		// @media screen and (min-width: 630px){
+		// 	margin-top: 28%;
+		// }
+		// @media screen and (min-width: 700px){
+		// 	margin-top: 24%;
+		// }
 		@media screen and (min-width: 768px){
 			display: block;
 			position: absolute;
@@ -760,6 +783,12 @@ h2{
 		margin: 10% auto;
 		width: 73%;
 		font-family: 'Avenir-Next', sans-serif;
+		// @media screen and (min-width: 470px){
+		// 	margin-top: 22%;
+		// }
+		// @media screen and (min-width: 560px){
+		// 	margin-top: 29%;
+		// }
 
 		h5{
 			color: #8560a8;
@@ -814,20 +843,15 @@ h2{
 	margin: 0 auto;
 	clear: both;
 
-	@media screen and (max-width: 687px){
+	@media screen and (max-width: 758px){
 		width: 71%;
 		flex-direction: column;
 		margin-top: 43%;
 		padding-top: 36%;
 	}
-	@media screen and (min-width: 688px){
-		width: 72%;
+	@media screen and (min-width: 759px){
 		flex-direction: row;
-		margin-top: 50%;
-		padding-top: 36%;
-	}
-	@media screen and (min-width: 768px){
-		width: 63.722222%;
+		width: 72%;
 		margin-top: 34%;
 		padding-top: 17%;
 	}
@@ -835,11 +859,11 @@ h2{
 		width: 61%;
 	}
 	@media screen and (min-width: 1024px){
-		width: 52.722222%;
+		width: 56.722222%;
 		margin-top: 20%;
 	}
 	@media screen and (min-width: 1224px){
-		width: 46.722222%; 
+		width: 52.722222%; 
 		margin-top: 16%;
 	}
 	 
@@ -923,19 +947,19 @@ h2{
 			margin-left: 63%;
 		}
 		@media screen and (min-width: 768px){
-			margin-left: 67%;
+			margin-left: 58%;
 		}
 		@media screen and (min-width: 900px){
 			margin-left: 63%;
 		}
 		@media screen and (min-width: 1024px){
-			margin-left: 61%;
+			margin-left: 56%;
 		}
 		@media screen and (min-width: 1224px){
-			margin-left: 66%;
+			margin-left: 56%;
 		}
 		@media screen and (min-width: 1440px){
-			margin-left: 64%;
+			margin-left: 57%;
 		}
 		flex-direction: column;
 		justify-content: center;
