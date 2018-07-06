@@ -260,6 +260,11 @@ table {
 	right: 176px;
 	top: 60px;
 	cursor: pointer;
+	transition: .2s ease-in-out;
+}
+
+.hero-section .topLine .burger:hover {
+	transform: translateY(-5px);
 }
 
 .hero-section .topLine .burger .top-line {
@@ -1153,6 +1158,11 @@ h2 {
 	text-align: left;
 }
 
+#about .aboutText h2 a em:hover {
+	color: #8763aa;
+	animation: wiggle 0.5s infinite;
+}
+
 #about .aboutText p {
 	font-size: 0.9em;
 	line-height: 1.8em;
@@ -1179,6 +1189,18 @@ h2 {
 @media screen and (min-width: 1440px) {
 	#about .aboutText p {
 		line-height: 2.4em;
+	}
+}
+
+@keyframes wiggle {
+	0% {
+		transform: rotate(4deg);
+	}
+	50% {
+		transform: rotate(-4deg);
+	}
+	100% {
+		transform: rotate(4deg);
 	}
 }
 
@@ -1481,7 +1503,7 @@ h2 {
 	background-color: #8560a8;
 	padding: 16px 58px;
 	border-radius: 20px;
-	transition: .4s ease-in-out;
+	transition: .5s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
@@ -1491,7 +1513,7 @@ h2 {
 }
 
 #resume .middle div:hover {
-	background-color: #d8ddef;
+	border-radius: 0px;
 }
 
 #resume .middle div a {
@@ -1594,13 +1616,13 @@ footer h5 {
 
 footer em {
 	cursor: pointer;
-	transition: .2s ease-in-out;
 	font-size: 1.8em;
 	padding-left: 19px;
 }
 
 footer em:hover {
 	color: #fff;
+	animation: wiggle 0.5s infinite;
 }
 
 footer div {

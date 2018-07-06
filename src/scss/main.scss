@@ -164,6 +164,12 @@
 			right: 176px;
 			top: 60px;
 			cursor: pointer;
+			transition: .2s ease-in-out;
+
+			&:hover{
+				transform: translateY(-5px);
+				
+			}
 	
 			.top-line{
 				position: absolute;
@@ -968,6 +974,16 @@ h2{
 		h2{
 			margin-bottom: 12px;
 			text-align: left;
+
+			a{
+
+				em{
+					&:hover{
+						color: #8763aa;
+						animation: wiggle 0.5s infinite;
+					}
+				}
+			}
 		}
 
 		p{
@@ -991,6 +1007,13 @@ h2{
 		}
 
 	}
+}
+
+
+@keyframes wiggle {
+	0% {transform:rotate(4deg);}
+	50% {transform:rotate(-4deg);}
+	100% {transform:rotate(4deg);}
 }
 
 
@@ -1229,16 +1252,16 @@ h2{
 			margin-bottom: 40px;
 		}
 
-		div{
+		div{ // download a copy
 			@media screen and (max-width: 767px){
 				padding: 14px 20px;
 			}
 			background-color: #8560a8;
 			padding: 16px 58px;
 			border-radius: 20px;
-			transition: .4s ease-in-out;
+			transition: .5s ease-in-out;
 			&:hover{
-				background-color: #d8ddef;
+				border-radius: 0px;
 			}
 
 			a{
@@ -1330,11 +1353,11 @@ footer{
 
 	em{
 		cursor: pointer;
-		transition: .2s ease-in-out;
 		font-size: 1.8em;
 		padding-left: 19px;
 		&:hover{
 			color: #fff;
+			animation: wiggle 0.5s infinite;
 		}
 
 	}
