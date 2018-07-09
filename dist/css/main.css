@@ -857,15 +857,21 @@ h2 {
 	display: none;
 	background-color: #fff;
 	border: 2px solid gray;
-	width: 60%;
-	margin: 0 auto;
 	z-index: 12;
-	overflow-y: scroll;
+	overflow-y: auto;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	max-height: 90vh;
+	width: 60%;
 }
 
-.portfolio-popUp div {
-	height: 60vh;
-	width: 100%;
+@media screen and (max-width: 767px) {
+	.portfolio-popUp {
+		width: 90%;
+	}
 }
 
 .portfolio-popUp div .x {
@@ -888,28 +894,7 @@ h2 {
 
 .portfolio-popUp.show {
 	display: block;
-	position: absolute;
-	width: 100%;
-	left: 0%;
-	margin-top: 9%;
 	transition: .4s ease-in-out;
-}
-
-@media screen and (min-width: 768px) {
-	.portfolio-popUp.show {
-		display: block;
-		position: absolute;
-		width: 67%;
-		left: 0%;
-		right: 0%;
-		margin-top: 4%;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.portfolio-popUp.show {
-		margin-top: 16%;
-	}
 }
 
 .content div {
