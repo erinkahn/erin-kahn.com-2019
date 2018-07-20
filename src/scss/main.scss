@@ -216,6 +216,25 @@ body{
 			}
 		}
 	}
+
+	.back{
+		position: absolute;
+		left: 40px;
+		top: 60px;
+		a{
+			
+			em.fas.fa-chevron-left{
+				transition: .2s ease-in-out;
+				color: #541b8e;
+				font-size: 2em;
+
+				&:hover{
+					color: #93a1d2;
+				}
+			}
+			
+		}
+	}
 	
 
 	
