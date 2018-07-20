@@ -1163,6 +1163,14 @@ h2 {
 	text-align: left;
 }
 
+#about .aboutText h2 a {
+	color: #504099;
+}
+
+#about .aboutText h2 a em {
+	color: #504099;
+}
+
 #about .aboutText h2 a em:hover {
 	color: #8763aa;
 	animation: wiggle 0.5s infinite;
