@@ -1,0 +1,53 @@
+.hero-section.product-page {
+	height: 23vh;
+}
+
+.product-section {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.product-section .moodie, .product-section .drive {
+	flex-direction: column;
+	display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+	.product-section .moodie, .product-section .drive {
+		margin-top: -80px;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.product-section .moodie, .product-section .drive {
+		margin-top: -180px;
+	}
+}
+
+.product-section .moodie img, .product-section .moodie video, .product-section .drive img, .product-section .drive video {
+	max-width: 300px;
+	width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+	.product-section .moodie img, .product-section .moodie video, .product-section .drive img, .product-section .drive video {
+		max-width: 400px;
+	}
+}
+
+.product-section .moodie h1, .product-section .drive h1 {
+	text-align: center;
+	font-family: 'Avenir-Next', sans-serif;
+	font-weight: 200;
+	font-size: 1.3em;
+	letter-spacing: 0.08em;
+	margin: 50px 0 30px 0;
+}
+
+.product-section .moodie video, .product-section .drive video {
+	margin-bottom: 23%;
+}
+
+/*# sourceMappingURL=product-page.css.map */
