@@ -1,35 +1,62 @@
-// product pages--------------------------
-
-//moodie
+// // product pages--------------------------
 
 .hero-section.product-page{
     height: 23vh;
 }
 
-.product-section{
-	display: flex;
-	justify-content: center;
+.project-description{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
+    align-items: center;
 
-	.moodie, .drive, .waze{
-        flex-direction: column;
-        display: flex;
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: #541b8e;
+        font-family: 'Sniglet', cursive;
+        font-size: 2em;
+        margin-top: -60px;
         @media screen and (min-width: 1024px){
-            margin-top: -80px;
+            margin-top: -100px;
         }
         @media screen and (min-width: 1224px){
-            margin-top: -180px;
+            margin-top: -260px;
         }
+    }
 
-		img, video{
-			max-width: 300px;
-            width: 100%;
-            @media screen and (min-width: 1024px){
-                max-width: 400px;
-            }
-           
-        }
+    p{
+        line-height: 1.5em;
+        font-family: 'Avenir-Next', sans-serif;
+        font-weight: 100;
+        margin-bottom: 50px;
+        max-width: 470px;
+    }
+}
+
+.product-section{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    h1{
+        text-align: center;
+        font-family: 'Avenir-Next', sans-serif;
+        font-weight: 200;
+        font-size: 1.3em;
+        letter-spacing: 0.08em;
+        margin: 50px 0 30px 0;
+    }
+
+    .waze{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         a{
             margin-bottom: 60px;
@@ -37,19 +64,118 @@
             &:hover{
                 transform: scale(1.09);
             }
-        }
-
-        h1{
-            text-align: center;
-            font-family: 'Avenir-Next', sans-serif;
-            font-weight: 200;
-            font-size: 1.3em;
-            letter-spacing: 0.08em;
-            margin: 50px 0 30px 0;
+            img {
+                width: 100%;
+                @media screen and (min-width: 768px){
+                    min-width: 600px;
+                    width: 100%;
+                }
+            }
         }
         
-        video{
-            margin-bottom: 23%;
+
+        span{
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width: 768px){
+                flex-direction: row;
+            }
         }
-	}
+        
+
+        video{
+            max-width: 400px;
+            width: 100%;
+            @media screen and (min-width: 768px){
+                padding: 0 20px 0 20px;
+            }
+            @media screen and (min-width: 1024px){
+                padding: 0 30px 0 30px;
+            }
+        }
+
+    }
+
+    .moodie{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+           width: 100%;
+           max-width: 300px;  
+            @media screen and (min-width: 768px){
+                max-width: 400px;
+            }   
+        }
+
+        span{
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width: 900px){
+                flex-direction: row;
+            }
+            video{
+                max-width: 400px;
+                width: 100%;
+
+                @media screen and (min-width: 900px){
+                    padding: 0 30px 0 30px;
+                }
+            }
+        }
+    }
+
+    .drive{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        @media screen and (min-width: 900px){
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div{
+
+            img{
+                width: 100%;
+                max-width: 300px;  
+                 @media screen and (min-width: 768px){
+                     max-width: 400px;
+                 }   
+                 @media screen and (min-width: 900px){
+                     margin-top: 100px;
+                 }
+                 @media screen and (min-width: 1024px){
+                    max-width: 450px;
+                }
+             }
+     
+             video{
+                 max-width: 310px;
+                 width: 100%;
+                 @media screen and (min-width: 1024px){
+                    max-width: 350px;
+                }
+             }
+     
+             h1{
+                 @media screen and (min-width: 900px){
+                     margin-top: -2px;
+                 }
+             }
+        }
+        
+    }
+
 }
+
+
+
+
+

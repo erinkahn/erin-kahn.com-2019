@@ -2,51 +2,53 @@
 	height: 23vh;
 }
 
-.product-section {
-	display: flex;
+.project-description {
 	justify-content: center;
+	display: flex;
+	flex-direction: column;
 	margin: 0 auto;
-	width: 80%;
+	width: 85%;
+	align-items: center;
 }
 
-.product-section .moodie, .product-section .drive, .product-section .waze {
-	flex-direction: column;
-	display: flex;
+.project-description h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	color: #541b8e;
+	font-family: 'Sniglet', cursive;
+	font-size: 2em;
+	margin-top: -60px;
 }
 
 @media screen and (min-width: 1024px) {
-	.product-section .moodie, .product-section .drive, .product-section .waze {
-		margin-top: -80px;
+	.project-description h1 {
+		margin-top: -100px;
 	}
 }
 
 @media screen and (min-width: 1224px) {
-	.product-section .moodie, .product-section .drive, .product-section .waze {
-		margin-top: -180px;
+	.project-description h1 {
+		margin-top: -260px;
 	}
 }
 
-.product-section .moodie img, .product-section .moodie video, .product-section .drive img, .product-section .drive video, .product-section .waze img, .product-section .waze video {
-	max-width: 300px;
-	width: 100%;
+.project-description p {
+	line-height: 1.5em;
+	font-family: 'Avenir-Next', sans-serif;
+	font-weight: 100;
+	margin-bottom: 50px;
+	max-width: 470px;
 }
 
-@media screen and (min-width: 1024px) {
-	.product-section .moodie img, .product-section .moodie video, .product-section .drive img, .product-section .drive video, .product-section .waze img, .product-section .waze video {
-		max-width: 400px;
-	}
+.product-section {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
 }
 
-.product-section .moodie a, .product-section .drive a, .product-section .waze a {
-	margin-bottom: 60px;
-	transition: .2s ease-in-out;
-}
-
-.product-section .moodie a:hover, .product-section .drive a:hover, .product-section .waze a:hover {
-	transform: scale(1.09);
-}
-
-.product-section .moodie h1, .product-section .drive h1, .product-section .waze h1 {
+.product-section h1 {
 	text-align: center;
 	font-family: 'Avenir-Next', sans-serif;
 	font-weight: 200;
@@ -55,8 +57,156 @@
 	margin: 50px 0 30px 0;
 }
 
-.product-section .moodie video, .product-section .drive video, .product-section .waze video {
-	margin-bottom: 23%;
+.product-section .waze {
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product-section .waze a {
+	margin-bottom: 60px;
+	transition: .2s ease-in-out;
+}
+
+.product-section .waze a:hover {
+	transform: scale(1.09);
+}
+
+.product-section .waze a img {
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.product-section .waze a img {
+		min-width: 600px;
+		width: 100%;
+	}
+}
+
+.product-section .waze span {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+	.product-section .waze span {
+		flex-direction: row;
+	}
+}
+
+.product-section .waze video {
+	max-width: 400px;
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.product-section .waze video {
+		padding: 0 20px 0 20px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.product-section .waze video {
+		padding: 0 30px 0 30px;
+	}
+}
+
+.product-section .moodie {
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product-section .moodie img {
+	width: 100%;
+	max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+	.product-section .moodie img {
+		max-width: 400px;
+	}
+}
+
+.product-section .moodie span {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+	.product-section .moodie span {
+		flex-direction: row;
+	}
+}
+
+.product-section .moodie span video {
+	max-width: 400px;
+	width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+	.product-section .moodie span video {
+		padding: 0 30px 0 30px;
+	}
+}
+
+.product-section .drive {
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+	.product-section .drive {
+		flex-direction: row;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.product-section .drive div img {
+	width: 100%;
+	max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+	.product-section .drive div img {
+		max-width: 400px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.product-section .drive div img {
+		margin-top: 100px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.product-section .drive div img {
+		max-width: 450px;
+	}
+}
+
+.product-section .drive div video {
+	max-width: 310px;
+	width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+	.product-section .drive div video {
+		max-width: 350px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.product-section .drive div h1 {
+		margin-top: -2px;
+	}
 }
 
 /*# sourceMappingURL=product-page.css.map */
