@@ -1256,7 +1256,7 @@ h2{
 
 		div{ // download a copy
 			@media screen and (max-width: 767px){
-				padding: 14px 20px;
+				padding: 14px 23px;
 			}
 			background-color: #8560a8;
 			padding: 16px 58px;
@@ -1277,6 +1277,29 @@ h2{
 				color: #fff;
 				font-weight: 100;
 				text-transform: uppercase;
+			}
+		}
+
+		p{
+			font-size: 0.75em;
+			color: #825aa6;
+			width: 175px;
+			line-height: 1.4em;
+			margin-top: 16px;
+			font-family: 'Avenir-Next', sans-serif;
+			@media screen and (min-width: 768px){
+				font-size: 0.83em;
+				width: 280px;
+				margin-top: 29px;
+				line-height: 1.8em;
+			}
+
+			a{
+				text-decoration: none;
+				color: #93a1d2;
+				&:hover{
+					color: #541b8e;
+				}
 			}
 		}
 	}
