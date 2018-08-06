@@ -588,7 +588,7 @@ h2{
 	}
 }
 
-.apps-aretha-nerds-waze{
+.apps-aretha-nerds-gkc-kkart{
 	width: 100%;
 
 	//apps
@@ -624,47 +624,47 @@ h2{
 		float: left;
 	}
 
-	//waze
-	div:last-child{
-		background-image: url('../img/waze.png');
+	//gkc
+	div:nth-child(4){
+		background-image: url('../img/gkc.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 0;
 		padding-bottom: 32%;
-		width: 66%;
+		width: 34.50704225%;
+		float: left;
+	}
+
+	//kkart
+	div:last-child{
+		background-image: url('../img/kkart.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 0;
+		padding-bottom: 32%;
+		width: 31.5%;
 		float: left;
 	}
 }
 
 
-.gkc-kkart-brewery-drive{
+.waze-brewery-drive{
 	width: 68.30985915%; // 485 / 710
 	float: left;
 
-	//gkc
+	//waze
 	div:first-child{
-		background-image: url('../img/gkc.png');
+		background-image: url('../img/waze.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 0;
 		padding-bottom: 48%;
-		width: 50%; // 241 / 485
-		float: left;
-	}
-
-	//kkart
-	div:nth-child(2){
-		background-image: url('../img/kkart.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 0;
-		padding-bottom: 48%;
-		width: 50%;// 245 / 485
+		width: 100%; // 241 / 485
 		float: left;
 	}
 
 	//brewery
-	div:nth-child(3){
+	div:nth-child(2){
 		background-image: url('../img/brewery.png');
 		background-repeat: no-repeat;
 		background-size: cover;

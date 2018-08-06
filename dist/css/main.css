@@ -759,11 +759,11 @@ h2 {
 	float: left;
 }
 
-.apps-aretha-nerds-waze {
+.apps-aretha-nerds-gkc-kkart {
 	width: 100%;
 }
 
-.apps-aretha-nerds-waze div:first-child {
+.apps-aretha-nerds-gkc-kkart div:first-child {
 	background-image: url("../img/apps.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -773,7 +773,7 @@ h2 {
 	float: left;
 }
 
-.apps-aretha-nerds-waze div:nth-child(2) {
+.apps-aretha-nerds-gkc-kkart div:nth-child(2) {
 	background-image: url("../img/aretha.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -783,7 +783,7 @@ h2 {
 	float: left;
 }
 
-.apps-aretha-nerds-waze div:nth-child(3) {
+.apps-aretha-nerds-gkc-kkart div:nth-child(3) {
 	background-image: url("../img/nerds.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -793,42 +793,42 @@ h2 {
 	float: left;
 }
 
-.apps-aretha-nerds-waze div:last-child {
-	background-image: url("../img/waze.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 0;
-	padding-bottom: 32%;
-	width: 66%;
-	float: left;
-}
-
-.gkc-kkart-brewery-drive {
-	width: 68.30985915%;
-	float: left;
-}
-
-.gkc-kkart-brewery-drive div:first-child {
+.apps-aretha-nerds-gkc-kkart div:nth-child(4) {
 	background-image: url("../img/gkc.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
-	padding-bottom: 48%;
-	width: 50%;
+	padding-bottom: 32%;
+	width: 34.50704225%;
 	float: left;
 }
 
-.gkc-kkart-brewery-drive div:nth-child(2) {
+.apps-aretha-nerds-gkc-kkart div:last-child {
 	background-image: url("../img/kkart.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
-	padding-bottom: 48%;
-	width: 50%;
+	padding-bottom: 32%;
+	width: 31.5%;
 	float: left;
 }
 
-.gkc-kkart-brewery-drive div:nth-child(3) {
+.waze-brewery-drive {
+	width: 68.30985915%;
+	float: left;
+}
+
+.waze-brewery-drive div:first-child {
+	background-image: url("../img/waze.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 48%;
+	width: 100%;
+	float: left;
+}
+
+.waze-brewery-drive div:nth-child(2) {
 	background-image: url("../img/brewery.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -838,7 +838,7 @@ h2 {
 	float: left;
 }
 
-.gkc-kkart-brewery-drive div:last-child {
+.waze-brewery-drive div:last-child {
 	background-image: url("../img/drive.png");
 	background-repeat: no-repeat;
 	background-size: cover;
