@@ -759,11 +759,11 @@ h2 {
 	float: left;
 }
 
-.apps-oreo-nerds-waze {
+.apps-aretha-nerds-waze {
 	width: 100%;
 }
 
-.apps-oreo-nerds-waze div:first-child {
+.apps-aretha-nerds-waze div:first-child {
 	background-image: url("../img/apps.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -773,8 +773,8 @@ h2 {
 	float: left;
 }
 
-.apps-oreo-nerds-waze div:nth-child(2) {
-	background-image: url("../img/oreo.png");
+.apps-aretha-nerds-waze div:nth-child(2) {
+	background-image: url("../img/aretha.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
@@ -783,7 +783,7 @@ h2 {
 	float: left;
 }
 
-.apps-oreo-nerds-waze div:nth-child(3) {
+.apps-aretha-nerds-waze div:nth-child(3) {
 	background-image: url("../img/nerds.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -793,7 +793,7 @@ h2 {
 	float: left;
 }
 
-.apps-oreo-nerds-waze div:last-child {
+.apps-aretha-nerds-waze div:last-child {
 	background-image: url("../img/waze.png");
 	background-repeat: no-repeat;
 	background-size: cover;
