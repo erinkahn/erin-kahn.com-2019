@@ -648,23 +648,34 @@ h2{
 }
 
 
-.waze-brewery-drive{
+.node-crystals-brewery-drive{
 	width: 68.30985915%; // 485 / 710
 	float: left;
 
-	//waze
+	//node
 	div:first-child{
-		background-image: url('../img/waze.png');
+		background-image: url('../img/give.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 0;
 		padding-bottom: 48%;
-		width: 100%; // 241 / 485
+		width: 50%; // 241 / 485
+		float: left;
+	}
+
+	//crystals
+	div:nth-child(2){
+		background-image: url('../img/crystals.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 0;
+		padding-bottom: 48%;
+		width: 50%; // 241 / 485
 		float: left;
 	}
 
 	//brewery
-	div:nth-child(2){
+	div:nth-child(3){
 		background-image: url('../img/brewery.png');
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -687,7 +698,7 @@ h2{
 }
 
 
-.moodie-clover{
+.moodie-waze{
 	width: 31.69014085%; // 225 / 710
 	float: left;
 
@@ -697,14 +708,14 @@ h2{
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 0;
-		padding-bottom: 152%;
+		padding-bottom: 152.3%;
 		width: 100%; // 225 / 225
 		float: left;
 	}
 
-	//cloverhill
+	//waze
 	div:last-child{
-		background-image: url('../img/ch.png');
+		background-image: url('../img/waze.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 0;

@@ -813,22 +813,32 @@ h2 {
 	float: left;
 }
 
-.waze-brewery-drive {
+.node-crystals-brewery-drive {
 	width: 68.30985915%;
 	float: left;
 }
 
-.waze-brewery-drive div:first-child {
-	background-image: url("../img/waze.png");
+.node-crystals-brewery-drive div:first-child {
+	background-image: url("../img/give.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
 	padding-bottom: 48%;
-	width: 100%;
+	width: 50%;
 	float: left;
 }
 
-.waze-brewery-drive div:nth-child(2) {
+.node-crystals-brewery-drive div:nth-child(2) {
+	background-image: url("../img/crystals.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 48%;
+	width: 50%;
+	float: left;
+}
+
+.node-crystals-brewery-drive div:nth-child(3) {
 	background-image: url("../img/brewery.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -838,7 +848,7 @@ h2 {
 	float: left;
 }
 
-.waze-brewery-drive div:last-child {
+.node-crystals-brewery-drive div:last-child {
 	background-image: url("../img/drive.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -848,23 +858,23 @@ h2 {
 	float: left;
 }
 
-.moodie-clover {
+.moodie-waze {
 	width: 31.69014085%;
 	float: left;
 }
 
-.moodie-clover div:first-child {
+.moodie-waze div:first-child {
 	background-image: url("../img/moodie.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
-	padding-bottom: 152%;
+	padding-bottom: 152.3%;
 	width: 100%;
 	float: left;
 }
 
-.moodie-clover div:last-child {
-	background-image: url("../img/ch.png");
+.moodie-waze div:last-child {
+	background-image: url("../img/waze.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
