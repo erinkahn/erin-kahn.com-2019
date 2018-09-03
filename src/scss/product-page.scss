@@ -39,15 +39,18 @@
         font-family: 'Avenir-Next', sans-serif;
         font-weight: 100;
         margin-bottom: 50px;
-        text-align: center;
         max-width: 470px;
-        @media screen and (min-width: 500px){
-            text-align: justify;
-        }
     }
 }
 
-div:nth-child(2) p, div:nth-child(3) p{
+p.justify{
+    text-align: center;
+    @media screen and (min-width: 500px){
+        text-align: justify;
+    }
+}
+
+.tech p, .myRole p{
     text-align: center;
     @media screen and (min-width: 1024px){
         text-align: right;
