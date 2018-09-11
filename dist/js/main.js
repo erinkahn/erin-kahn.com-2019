@@ -73,7 +73,7 @@ document.querySelector('.down').addEventListener('click', function () {
 
 navButtons = document.querySelectorAll('.nav ul li a');
 
-for (let m = 0; m < navButtons.length; m++) {
+for (let m = 0; m < navButtons.length - 1; m++) {
     navButtons[m].addEventListener('click', function () {
         event.preventDefault();
 
@@ -84,4 +84,17 @@ for (let m = 0; m < navButtons.length; m++) {
         mainSections[m].scrollIntoView({ block: 'start', behavior: 'smooth' });
     });
 }
+
+// fun page hover -----------------------------------
+
+const imgContent = document.querySelectorAll('.img-content-hover');
+
+function showImgContent(e) {
+    for (var i = 0; i < imgContent.length; i++) {
+        imgContent[i].style.left = e.pageX + 'px';
+        imgContent[i].style.top = e.pageY + 'px';
+    }
+};
+
+document.addEventListener('mousemove', showImgContent);
 //# sourceMappingURL=main.js.map

@@ -648,7 +648,7 @@ h2{
 }
 
 
-.node-crystals-brewery-drive{
+.node-crystals-brewery-drive-redrocks{
 	width: 68.30985915%; // 485 / 710
 	float: left;
 
@@ -680,21 +680,34 @@ h2{
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 0;
-		padding-bottom: 69%;
+		padding-bottom: 34.5%;
 		width: 50%; // 241 / 485
 		float: left;
 	}
 
-	//brewery
-	div:last-child{
+	//drive
+	div:nth-child(4){
 		background-image: url('../img/drive.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 0;
 		padding-bottom: 69%;
 		width: 50%;// 245 / 485
+		float: right;
+	}
+
+	//redrocks
+	div:nth-child(5){
+		background-image: url('../img/redRocks.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 0;
+		padding-bottom: 34.5%;
+		width: 50%; // 241 / 485
 		float: left;
 	}
+
+	
 }
 
 
@@ -1336,6 +1349,13 @@ footer{
 	margin-top: 40%;
 	display: flex;
 	justify-content: center;
+
+	&.fun-footer{
+		margin-top: -64px;
+		@media screen and (min-width: 917px){
+			margin-top: 5%;
+		}
+	}
 	@media screen and (min-width: 768px){
 		margin-top: 24%;
 	}

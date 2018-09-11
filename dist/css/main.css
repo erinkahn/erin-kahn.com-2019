@@ -813,12 +813,12 @@ h2 {
 	float: left;
 }
 
-.node-crystals-brewery-drive {
+.node-crystals-brewery-drive-redrocks {
 	width: 68.30985915%;
 	float: left;
 }
 
-.node-crystals-brewery-drive div:first-child {
+.node-crystals-brewery-drive-redrocks div:first-child {
 	background-image: url("../img/give.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -828,7 +828,7 @@ h2 {
 	float: left;
 }
 
-.node-crystals-brewery-drive div:nth-child(2) {
+.node-crystals-brewery-drive-redrocks div:nth-child(2) {
 	background-image: url("../img/crystals.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -838,22 +838,32 @@ h2 {
 	float: left;
 }
 
-.node-crystals-brewery-drive div:nth-child(3) {
+.node-crystals-brewery-drive-redrocks div:nth-child(3) {
 	background-image: url("../img/brewery.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
-	padding-bottom: 69%;
+	padding-bottom: 34.5%;
 	width: 50%;
 	float: left;
 }
 
-.node-crystals-brewery-drive div:last-child {
+.node-crystals-brewery-drive-redrocks div:nth-child(4) {
 	background-image: url("../img/drive.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
 	padding-bottom: 69%;
+	width: 50%;
+	float: right;
+}
+
+.node-crystals-brewery-drive-redrocks div:nth-child(5) {
+	background-image: url("../img/redRocks.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 34.5%;
 	width: 50%;
 	float: left;
 }
@@ -1616,6 +1626,16 @@ footer {
 	justify-content: center;
 	background-image: url("../img/footer.png");
 	background-size: cover;
+}
+
+footer.fun-footer {
+	margin-top: -64px;
+}
+
+@media screen and (min-width: 917px) {
+	footer.fun-footer {
+		margin-top: 5%;
+	}
 }
 
 @media screen and (min-width: 768px) {
