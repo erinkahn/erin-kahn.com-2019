@@ -387,6 +387,7 @@ body {
 	font-size: 1.6em;
 	margin-top: 21px;
 	letter-spacing: 0.08em;
+	font-style: italic;
 }
 
 .hero-section .middleHero .heroText .line {
@@ -759,11 +760,11 @@ h2 {
 	float: left;
 }
 
-.apps-aretha-nerds-gkc-kkart {
+.apps-aretha-nerds-scottbros-kkart {
 	width: 100%;
 }
 
-.apps-aretha-nerds-gkc-kkart div:first-child {
+.apps-aretha-nerds-scottbros-kkart div:first-child {
 	background-image: url("../img/apps.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -773,7 +774,7 @@ h2 {
 	float: left;
 }
 
-.apps-aretha-nerds-gkc-kkart div:nth-child(2) {
+.apps-aretha-nerds-scottbros-kkart div:nth-child(2) {
 	background-image: url("../img/aretha.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -783,7 +784,7 @@ h2 {
 	float: left;
 }
 
-.apps-aretha-nerds-gkc-kkart div:nth-child(3) {
+.apps-aretha-nerds-scottbros-kkart div:nth-child(3) {
 	background-image: url("../img/nerds.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -793,8 +794,8 @@ h2 {
 	float: left;
 }
 
-.apps-aretha-nerds-gkc-kkart div:nth-child(4) {
-	background-image: url("../img/gkc.png");
+.apps-aretha-nerds-scottbros-kkart div:nth-child(4) {
+	background-image: url("../img/scottbros.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
@@ -803,7 +804,7 @@ h2 {
 	float: left;
 }
 
-.apps-aretha-nerds-gkc-kkart div:last-child {
+.apps-aretha-nerds-scottbros-kkart div:last-child {
 	background-image: url("../img/kkart.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -813,12 +814,12 @@ h2 {
 	float: left;
 }
 
-.node-crystals-brewery-drive-redrocks {
+.node-crystals-waffle-drive-redrocks {
 	width: 68.30985915%;
 	float: left;
 }
 
-.node-crystals-brewery-drive-redrocks div:first-child {
+.node-crystals-waffle-drive-redrocks div:first-child {
 	background-image: url("../img/give.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -828,7 +829,7 @@ h2 {
 	float: left;
 }
 
-.node-crystals-brewery-drive-redrocks div:nth-child(2) {
+.node-crystals-waffle-drive-redrocks div:nth-child(2) {
 	background-image: url("../img/crystals.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -838,8 +839,8 @@ h2 {
 	float: left;
 }
 
-.node-crystals-brewery-drive-redrocks div:nth-child(3) {
-	background-image: url("../img/brewery.png");
+.node-crystals-waffle-drive-redrocks div:nth-child(3) {
+	background-image: url("../img/waffle.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
@@ -848,7 +849,7 @@ h2 {
 	float: left;
 }
 
-.node-crystals-brewery-drive-redrocks div:nth-child(4) {
+.node-crystals-waffle-drive-redrocks div:nth-child(4) {
 	background-image: url("../img/drive.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -858,7 +859,7 @@ h2 {
 	float: right;
 }
 
-.node-crystals-brewery-drive-redrocks div:nth-child(5) {
+.node-crystals-waffle-drive-redrocks div:nth-child(5) {
 	background-image: url("../img/redRocks.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -868,12 +869,12 @@ h2 {
 	float: left;
 }
 
-.moodie-waze {
+.moodie-conlan {
 	width: 31.69014085%;
 	float: left;
 }
 
-.moodie-waze div:first-child {
+.moodie-conlan div:first-child {
 	background-image: url("../img/moodie.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -883,13 +884,37 @@ h2 {
 	float: left;
 }
 
-.moodie-waze div:last-child {
-	background-image: url("../img/waze.png");
+.moodie-conlan div:last-child {
+	background-image: url("../img/conlan.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 0;
 	padding-bottom: 100%;
 	width: 100%;
+	float: left;
+}
+
+.sheffield-southsucc {
+	width: 100%;
+}
+
+.sheffield-southsucc div:first-child {
+	background-image: url("../img/sheffield.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 34%;
+	width: 68.30985915%;
+	float: left;
+}
+
+.sheffield-southsucc div:last-child {
+	background-image: url("../img/southeastsucc.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+	padding-bottom: 34%;
+	width: 31.69014085%;
 	float: left;
 }
 
@@ -968,7 +993,7 @@ h2 {
 
 .content div h6 {
 	color: #000;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	font-weight: 600;
 	font-size: 1em;
 }

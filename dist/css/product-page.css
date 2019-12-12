@@ -250,6 +250,62 @@ p.justify {
 	}
 }
 
+.product-section .red-rocks {
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product-section .red-rocks img {
+	width: 100%;
+	max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+	.product-section .red-rocks img {
+		max-width: 600px;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.product-section .red-rocks img {
+		max-width: 800px;
+	}
+}
+
+.product-section .red-rocks span {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 200px;
+}
+
+@media screen and (min-width: 917px) {
+	.product-section .red-rocks span {
+		padding-bottom: 90px;
+	}
+}
+
+.product-section .red-rocks span video {
+	max-width: 700px;
+	width: 100%;
+	border-radius: 30px;
+	border: 5px solid gray;
+}
+
+@media screen and (max-width: 767px) {
+	.product-section .red-rocks span video {
+		border: 3px solid gray;
+		border-radius: 15px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.product-section .red-rocks span video {
+		max-width: 800px;
+	}
+}
+
 h1 {
 	text-align: center;
 	margin-bottom: 20px;
@@ -319,7 +375,7 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-	.gallery .img-container:first-child, .gallery .img-container:nth-child(2), .gallery .img-container:nth-child(4), .gallery .img-container:nth-child(5) {
+	.gallery .img-container:first-child, .gallery .img-container:nth-child(2), .gallery .img-container:nth-child(4), .gallery .img-container:nth-child(5), .gallery .img-container:nth-child(7), .gallery .img-container:nth-child(8) {
 		width: 50%;
 	}
 }
@@ -327,6 +383,9 @@ h1 {
 @media screen and (min-width: 1024px) {
 	.gallery .img-container:nth-child(4), .gallery .img-container:nth-child(5), .gallery .img-container:nth-child(6) {
 		width: 33.3333333333%;
+	}
+	.gallery .img-container:nth-child(4) img.field, .gallery .img-container:nth-child(5) img.field, .gallery .img-container:nth-child(6) img.field {
+		height: 100%;
 	}
 }
 
@@ -341,6 +400,7 @@ h1 {
 	-webkit-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	padding: 5px;
 }
 
 .gallery img:hover {
@@ -350,8 +410,8 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-	.gallery img.piano {
-		height: 400px;
+	.gallery img.piano, .gallery img.field {
+		height: 500px;
 	}
 }
 
@@ -383,5 +443,7 @@ h1 {
 		padding: 1rem 0;
 	}
 }
+
+/*# sourceMappingURL=product-page.css.map */
 
 /*# sourceMappingURL=product-page.css.map */
